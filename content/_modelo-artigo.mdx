@@ -1,0 +1,78 @@
+---
+# ============================================================
+# MODELO DE ARTIGO. NÃO FICA NO SITE (está fora de content/posts).
+# Como usar: copie este arquivo para content/posts/nome-do-artigo.mdx
+# (o nome do arquivo vira o endereço: /blog/nome-do-artigo).
+# Use só letras minúsculas, números e hífens no nome do arquivo.
+# Mantenha as aspas e os espaços do cabeçalho exatamente como estão.
+# ============================================================
+
+title: "Título do artigo (até ~60 caracteres, com a palavra que as pessoas pesquisam)"
+description: "Resumo de 1 ou 2 frases, até 160 caracteres. Aparece no Google e nos cards."
+
+# Escolha UMA: financas | tributos | vendas | marketing | automacao
+category: financas
+
+# Tipo do artigo (organiza o mix 80/15/5): educativo | solucao | indicacao
+kind: educativo
+
+# Datas no formato "AAAA-MM-DD", entre aspas. "updated" aparece como "Atualizado em".
+date: "2026-11-10"
+updated: "2026-11-10"
+
+author: "Seu Nome"
+
+# Palavras-chave (ajudam nos artigos relacionados)
+tags: ["palavra 1", "palavra 2"]
+
+# Mude para true se o artigo tiver links de afiliado (mostra o Aviso de Afiliados)
+hasAffiliate: false
+
+# OBRIGATÓRIO em artigos de tributos. Nos demais, pode apagar este bloco "sources".
+sources:
+  - label: "Portal do Empreendedor (gov.br)"
+    url: "https://www.gov.br/empresas-e-negocios/pt-br/empreendedor"
+  - label: "Receita Federal"
+    url: "https://www.gov.br/receitafederal/pt-br"
+
+# CTA do fim do artigo. Escolha a solução que combina com o tema:
+# estoque | orcamentos | agendamento | catalogo | atendimento-ia
+# "title" e "text" são opcionais (se apagar, o site usa o texto padrão da solução).
+cta:
+  solution: estoque
+  title: "Chamada opcional para o fim do artigo"
+  text: "Frase opcional explicando como o sistema resolve a dor do artigo."
+---
+
+Parágrafo de abertura: diga qual problema o artigo resolve e o que a pessoa vai aprender.
+
+## Primeiro título
+
+Texto em Markdown. Use **negrito** para destacar e listas quando fizer sentido:
+
+- primeiro item
+- segundo item
+
+## Segundo título
+
+Link comum: [texto do link](https://www.exemplo.com.br). Link para outra página do site: [Maquininhas](/maquininhas).
+
+Tabela (opcional):
+
+| Coluna A | Coluna B |
+|----------|----------|
+| valor 1  | valor 2  |
+
+<Callout title="Dica rápida">
+Caixa de destaque para uma dica ou aviso importante.
+</Callout>
+
+## Link de afiliado (só se houver)
+
+Use assim, e lembre de colocar hasAffiliate: true no cabeçalho:
+
+<AffiliateLink href="https://seu-link-de-afiliado">texto do link</AffiliateLink>
+
+## Conclusão
+
+Feche com o resumo do que a pessoa deve fazer agora. O CTA de WhatsApp aparece sozinho depois deste texto.
